@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+      Intro to Programming Notes: Kris Tryber
+    </title>               
+    <link rel="stylesheet" href="intro.css">
+  </head>
+
+  <body>
+  	<div class="lesson-title-box">
+  		<h1>Lesson 1: The basics of the Web and HTML</h1>
+
+	  		<div class="concept">
+	  			<h2>HTML Notes</h2>
+	  		
+	  			<div class="content">
+	  				<p>
+	  					Browsers are built to read pages of HTML code that then display text. HTML is written with a series of elements and tags that are organized in tree like structures from biggest to smallest. CSS then comes in to make that content have color, borders, flexible structure so that webpages can be viewed on different screen sizes, etc.
+	  				</p>
+	  			</div>
+	  		</div>
+	  		<div class="concept">
+	  			<h2>Inline vs. Block Elements</h2>
+	  		
+	  			<div class="content">
+	  				<p>
+	  					HTML elements can either be inline or block.
+	  					<h3>Inline</h3>
+	  					<p>
+	  						Elements that appear inline with the text and do not have an invisible box around them.
+	  					</p>
+	  						<ul>
+	  							<li>span</li>
+	  							<li>a</li>
+	  							<li>img</li>
+	  						</ul>
+	  					<h3>Block</h3>
+	  						<p>
+	  							Elements that have invisible boxes around them, most important for taking a mockup from a pdf format to HTML.
+	  						</p>
+	  							<ul>
+	  								<li>h1,h2,h3</li>
+	  								<li>p</li>
+	  								<li>div</li>
+	  							</ul>
+	  				</p>
+	  			</div>
+	  		</div>	
+  	</div>
+
+  	<div class="lesson-title-box">
+  		<h1>Lesson 2: Creating a Structured Document with HTML</h1>
+
+	  		<div class="concept">
+	  			<h2>Text Editor</h2>
+	  			  <div class="content">
+	  				<p>
+	  					I'm using Sublime Text, I've used it while learning PHP and Wordpress.
+	  				</p>
+	  			</div>
+	  		</div>
+
+	  		<div class="concept">
+	  			<h2>HTML Structure</h2>
+	  			<div class="content">
+	  				<p>
+	  					HTML elements are structured like a tree so you start to have elements within elements. The further an element is indented to the write the deeper it is within it's parent element.  Ex. On this page I have a div surrounding the whole lesson with an h1 tag for the title.  Within that there is a div for the concept name then an h2 tag, then a div for content then a p tag surrounding the content.
+	  				</p>
+	  			</div>
+	  		</div>
+	  		<div class="concept">
+	  			<h2>Box Model</h2>
+	  			<div class="content">
+	  				<p>
+	  					The Box model:<br>
+              			<span class="margin-color">Margin</span> - Surrounds the box and serves as the space between the boxes<br>
+              			<span class="border-color">Border</span> - Borders the padding and the content<br>
+              			<span class="padding-color">Padding</span> - The padding clears the area around the content and takes the background color of the box, protects the content in the box.<br>
+              			<span class="content-color">Content</span> - This is the image or the text or the center of the box model.<br> 
+	  				</p>
+	  					<div class="outer-box">
+              				<div id="box-model" class="box">
+                				Content...   
+              				</div>
+            			</div>
+	  			</div>
+	  		</div>
+	  		<div class="concept">
+	  			<h2>Box Sizing Techniques</h2>
+	  		
+	  			<div class="content">
+	  				<p>
+	  					<ol>
+	  						<li>Set box sizes in % rather than pixels so that it changes with the browser size.</li>
+	  						<li>Set the box-sizing attribute to border-box for every element. see the CSS for the code.</li>
+	  						<li>Boxes are block style elements so before adjusting they will always take the whole width of the page. adding the display:flex; code to the surrounding div will allow them to appear next to each other.</li>
+	  					</ol>
+	  				</p>
+	  			</div>	
+	  		</div>
+	  		<div class="concept">
+	  			<h2>Code, Test Refine</h2>
+	  		
+	  			<div class="content">
+	  				<p>
+	  					<ol>
+	  						<li>Look for natural boxes</li>
+	  						<li>Look for repeated styles and semantic elements</li>
+	  						<li>Write your HTML</li>
+	  						<li>Apply styles from biggest to smallest</li>
+	  						<li>Fix things</li>
+	  					</ol>
+	  				</p>
+	  			</div>	
+	  		</div>
+	  		<div class="concept">
+	  			<h2>Looking for errors in HTML and CSS</h2>
+	  		
+	  			<div class="content">
+	  				<p>
+	  					<ul>
+	  						<li><a href="http://validator.w3.org/#validate_by_input">To verify HTML</a></li>
+	  						<li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">To verify CSS</a></li>
+	  					</ul>
+	  				</p>
+	  			</div>	
+	  		</div>
+  	</div>
+
+
+  	</div>
+  </body>
+</html>
