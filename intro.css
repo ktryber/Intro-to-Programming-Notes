@@ -16,6 +16,7 @@ font-family: 'ProximaNova', 'helvetica neue';
 }
 
 h2 {
+padding-left: 10px;
 font-family: 'ProximaNova', 'helvetica neue';
 }
 
@@ -29,6 +30,10 @@ font-family: 'ProximaNova', 'helvetica neue';
 
 .lesson-title-box {
 
+}
+
+ul {
+font-family: 'ProximaNova', 'helvetica neue';
 }
 
 .concept {
