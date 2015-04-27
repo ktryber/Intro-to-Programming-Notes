@@ -1,0 +1,91 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+background-color: #f5efe6;
+}
+h1 {
+padding-left: 10px;
+padding-top: 10px;
+color: #1c5c76;
+font-family: 'ProximaNova', 'helvetica neue';
+
+}
+
+h2 {
+padding-left: 10px;
+font-family: 'ProximaNova', 'helvetica neue';
+}
+
+h3 {
+font-family: 'ProximaNova', 'helvetica neue';
+}
+
+p {
+font-family: 'ProximaNova', 'helvetica neue';
+}
+
+.lesson-title-box {
+
+}
+
+ul {
+font-family: 'ProximaNova', 'helvetica neue';
+}
+
+.concept {
+background-color: #ffffff;
+border-radius: 10px;
+margin: 20px;
+padding: 20px;
+}
+
+.content {
+background-color: #ffffff;
+}
+
+/* Box Model CSS */
+.margin-color {
+color: #F8CB9C;
+}
+
+.border-color {
+color: #feedbb;
+}
+
+.padding-color {
+color: #C1CD89;
+}
+
+.content-color{
+color: #8AB3BF;
+}
+
+#box-model {
+width: 200px;
+height: 200px;
+margin: 20px auto;
+border-width: 10px;
+border-color: #feedbb;
+border-style: solid;
+padding: 30px;
+}
+
+.box {
+background-image: linear-gradient(#8AB3BF, #8AB3BF), linear-gradient(#C1CD89, #C1CD89);
+background-clip: content-box, padding-box, border-box;
+}
+
+.outer-box {
+width: 400px;
+background-color: #F8CB9C;
+border: 1px white solid;
+padding: 0;
+margin: 0 auto;
+position: relative;
+}
+
+/* End Model CSS */

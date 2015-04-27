@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Intro to Programming: Stage 3
+		</title>
+		<link rel="stylesheet" href="intro.css">
+	</head>
+	<body>
+
+		<div class="navigation-bar">
+			<ul>
+				<li><a href="IntroToProgrammingNotes.html">Stage 1:</a></li>
+				<li><a href="Stage3.html">Stage 2:</a></li>
+			</ul>
+		</div>
+
+		<div class="stage">
+			<h1>Stage 3: Adding Videos to Your Page</h1>
+				<div class="lesson-title-box">
+					<h2>Stage 3 Table of Contents</h2>
+						<div class="concept">
+							<div class="content">
+								<ul>
+									<li><a href="#vocabulary">Vocabulary</a></li>
+									<li><a href="#process">Movie Website Process</a></li>
+								</ul>
+							</div>
+						</div>
+					<h2>Stage 3 Vocabulary<a name="vocabulary"></a></h2>
+						<div class="concept">
+							<div class="concept_title">
+								<h3>Class</h3>
+							</div>
+								<div class="content">
+										<p>
+											A way to tell Python to create a new type of "thing". A class can also be compared to a blueprint that can hold data and methods.  We then use that blueprint to create new things.  Classes are very important to object oriented programming because it allows us to re use code.<br>ex: We created a media.py file that contained the class Movie that took instance variables like movie title, storyline, the poster image and the youtube trailer. Once created we could then create as many instances of class movie re using the same code every time.
+										</p>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Object</h3>
+							</div>
+								<div class="content">
+									<p>
+										Two meanings: the most basic type of "thing", and any instance of some thing.
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Instance</h3>
+							</div>
+								<div class="content">
+									<p>
+										When you use your created classes for something. <br> ex: toy_story and our other movies are an instance of the class Movie.  We reused our class movie over and over to add each movie to our movies webpage.
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Self</h3>
+							</div>
+								<div class="content">
+									<p>
+										Inside the functions in a class, self is a convention for the instance/object being accessed. You could use any other word in place of self but since it is widely used it will make your code more readable.  
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Inheritance</h3>
+							</div>
+								<div class="content">
+									<p>
+										The concept that one class can inherit traits from another class, Much like you and your parents. Designing code using inheritance allows you to reuse already written code to add  and ammend throughout your program.<br><br> 
+										How to use: When you want one class to inherit variables from another class add the inherited class name as an argument in the new class.  ex: class Child(Parent):<br><br>
+										Doing this allows you to access the class and instance variables in the original class inside your new class. Within our inheritance.py file we had a class named parent that took last_name and eye_color as instance variables, then when we created class Child pulling those class and instance variables in, reusing the code and then adding another instance variable for number of toys.<br><br>
+										<img src="Screenshots/inheritance.png" alt="inheritance">
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Constant Variable</h3>
+							</div>
+							<div class="content">
+								<p>
+									When defining a constant variable the google python style guide calls for it to be named in all caps.  These are variables that we don't plan on changing or modifying throughout the program. For example, we had movie ratings in our movies webpage as a constant variable because those would never change.		
+								</p>
+									
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Class Variables</h3>
+							</div>
+								<div class="content">
+									<p>
+										Variables attached to classes. These are for attributes and methods that will be shared by all instances of the class. ex: our VALID_RATINGS variable will be shared by every instance created from class Movie.<br><br>
+
+										<img src="Screenshots/ClassVariable.png" alt="Class Variable Example"> 
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Definition Screenshot</h3>
+							</div>
+								<div class="content">
+									<p>
+										<img src="Screenshots/ClassDefinitions.png" alt="Python Class Definitions">
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Module</h3>
+							</div>
+								<div class="content">
+									<p>
+										A source file within your python program that you can import into other files to use things like classes that are built somewhere else. In object oriented program it's good practice to build your classes in one file and then import and pull code as you need it throughout your program to stay organized.<br><br>
+										Within the movies website we had one file (media.py) that held our class Movie which was our blueprint.  Then we had entertainment.py that stored all of the instances of that variable. If we wanted to add more things to the website like tv shows, it would have been a good idea to build those classes in media.py and create another file just for TV shows to keep movies and tv shows separate.
+										<br><br>
+										example: webbrowser is a module within python that we can import so that we can show the movie trailers.
+										<img src="Screenshots/module.png" alt="module example screenshot">
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Method Overriding</h3>
+							</div>
+								<div class="content">
+									<p>
+										This is used during inheritance. When you create a new class and you want to pull code from another class without duplication you'll want to create the new class and override the original method. We do this by passing in the original class name as an argument in the new class name and then calling the specific methods in the ancestor class that you want to change or modify. Think of this like a filter.<br><br>
+										<img src="Screenshots/MethodOverride.png" alt="Method override example">  
+									</p>
+									
+								</div>
+						</div>
+				</div>
+
+				<div class="lessont-title-box">
+					<h2>Movies Website Process<a name="process"></a></h2>
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Step One</h3>
+							</div>
+								<div class="content">
+									<p>
+										First we created a file named media.py.  This file holds all of our blueprints for the content that we then will create. For now since we only have one type of content (movies) we only have one class or blueprint made. Within this class we have 1 class variable (VALID_RATINGS) then an init contstructor with the instance variables that will hold data.<br><br>
+										We also added an instance method show_trailer to open a web browser and show the trailer for each movie.<br><br>
+										<img src="screenshots/media.png" alt="media.py screenshot">
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Step Two</h3>
+							</div>
+								<div class="content">
+									<p>
+										Next we created entertainment_center.py. This is where we put all of our content that we want to display (favorite movies). To do this we had to import media.py so that we could access our class Movie (blueprint).  Then we created an instance of class Movie for our favorite movies passing in all the arguments that it requires like title, storyline, cover photo and youtube trailer link. At the bottom of this code we also stored all of our movies into a variable that is then called in another file to start applying these instances to html to output on our webpage.<br><br>
+										<img src="screenshots/entertainment_center.png" alt="entertainment center screenshot">
+									</p>
+									
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Step Three</h3>
+							</div>
+								<div class="content">
+									<p>
+										Then we created fresh_tomatoes.py which included our html and css. Along with that we created a loop that pulls each movie from entertainment_center.py and places it within the html and css to make each movie display on the page correctly.<br><br>
+										<img src="screenshots/fresh_tomato_loop.png" alt="Fresh Tomato Loop">
+									</p>
+									
+								</div>
+						</div>
+				</div>
+	</body>
+</html>
+
+
+
