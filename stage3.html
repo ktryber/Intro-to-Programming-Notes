@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -24,6 +26,7 @@
 								<ul>
 									<li><a href="#vocabulary">Vocabulary</a></li>
 									<li><a href="#process">Movie Website Process</a></li>
+									<li><a href="#summary">Summary</a></li>
 								</ul>
 							</div>
 						</div>
@@ -158,7 +161,7 @@
 						</div>
 				</div>
 
-				<div class="lessont-title-box">
+				<div class="lesson-title-box">
 					<h2>Movies Website Process<a name="process"></a></h2>
 						<div class="concept">
 							<div class="concept-title">
@@ -199,6 +202,40 @@
 									
 								</div>
 						</div>
+				</div>
+
+				<div class="lesson-title-box">
+					<h2>Summary<a name="summary"></a></h2>
+						<div class="concept">
+							<div class"concept-title">
+								<h3>Object Oriented Programming</h3>
+							</div>
+								<div class="content">
+									<p>
+										When writing code in Python copy and pasting code is never a good idea simply becuase if you ever wanted to change that code you would have to remember every place that you pasted to change the code there as well. Also code will always be changed/altered as the project grows. As your program gets more and more complex creating classes for content that will be duplicated will make it easier to go back and change or edit.<BR><br>A perfect example is my notes website.  If you read the code you can tell that there are 3 pages, one for each stage but all of the HTML is duplicated to create another section or concept.  Each section contains a concept title and content related to the concept.  If I ever wanted to change each section and add an example for each concept I would have to go and edit every concept in this webpage.<br><br>
+
+										What would be better is if I could use python and create a class for a "concept" that took arguments for a title and description.<br><br>
+
+										<img src="screenshots/classMyContent.png"><br><br>
+
+										 Then once I was done I wanted to go back and add an "example" for each concept I could with ease.  The steps to do that would be to add a new member variable for my content class for "example".<br><br>
+
+										 <img src="screenshots/classMyContentExample.png"><br><br>
+
+										As my notes webpage gets more and more complicated I could keep editing that class to add more items that would be related to each content box. One other thing that I learned from the article linked in my first submission review was the need to keep related functions inside the classes that they are used for to keep the code readable. As the project got bigger this would be a must so that related functions wouldn't get overlooked.  Your classes overtime kind of become a table of contents section of a book. If you go to the code for this class (chapter) it will include all of these things(chapter content or sections).<br><br>
+
+										In stage 2 we learned how to do this with functions but it used lists and indexing to find which content to put where. If we were to rewrite that into a class it would be much cleaner.<br><br>
+
+										HTML/CSS classes and Python classes work in a similar way which is a good example of how a class works. Each CSS class on this webpage is a blueprint so that I can re use the class over and over again to get the same result without copy and pasting.  I then could go change anything about that blueprint in my intro.css and it would change throughout the whole website eliminating the possibly of error.<br><br>
+
+										The other way to do this would be to go through and add inline CSS to each section but then if I ever needed to change the font color or size I would have to do it for every instance. In summary intro.css is a file that contains multiple blueprints for various sections that I have setup and whenever I need to create another section I just pull from those blueprints to create new instances of the CSS classes or id's.<br><br>
+
+										This is a good example of Object Oriented Programming in HTML because if anyone was to read the code or wanted to make a change to the "concept_title", they could find that in my intro.css folder and make the change without causing any errors.
+
+									</p>
+								</div>
+
+
 				</div>
 	</body>
 </html>
