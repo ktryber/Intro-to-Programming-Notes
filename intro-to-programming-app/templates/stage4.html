@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+	
+	<div class="lesson-title-box">
+		{% for lesson_title in lesson_title_boxes %}
+		<h2>{{ lesson_title }}</h2>
+		{% endfor %}
+			<div class="concept">
+				<div class="concept-title">
+					{% for title in titles %}
+					<h3>{{ title }}</h3>
+					{% endfor %}
+				</div>
+
+		
+	</div>
+
+{% endblock %}

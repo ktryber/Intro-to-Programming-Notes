@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="stage">
+	<h1>Stage 2: Automate your Page</h1>
+		<div class="lesson-title-box">
+			<h2>Lesson 1: Introduction to "Serious Programming":</h2>
+				{% for concept in concepts_2_1 %}
+					<div class="concept">
+	  					<h3>{{ concept[0] }}</h3>	
+	  						<div class="content">
+	  							<p>
+	  								{{ concept[1] }}
+	  							</p>
+	  						</div>
+	  				</div>
+	  			{% endfor %}
+		</div>
+
+		<div class="lesson-title-box">
+			<h2>Lesson 2: Variables, Strings and Find</h2>
+				{% for concept in concepts_2_2 %}
+					<div class="concept">
+	  					<h3>{{ concept[0] }}</h3>	
+	  						<div class="content">
+	  							<p>
+	  								{{ concept[1] }}
+	  							</p>
+	  						</div>
+	  				</div>
+	  			{% endfor %}
+		</div>
+
+		<div class="lesson-title-box">
+			<h2>Lesson 3: Prodedures(functions)</h2>
+				{% for concept in concepts_2_3 %}
+					<div class="concept">
+	  					<h3>{{ concept[0] }}</h3>	
+	  						<div class="content">
+	  							<p>
+	  								{{ concept[1] }}
+	  							</p>
+	  						</div>
+	  				</div>
+	  			{% endfor %}
+		</div>
+
+			<div class="lesson-title-box">
+			<h2>Lesson 4: If/Else/Or/While/Break</h2>
+				{% for concept in concepts_2_4 %}
+					<div class="concept">
+	  					<h3>{{ concept[0] }}</h3>	
+	  						<div class="content">
+	  							<p>
+	  								{{ concept[1] }}
+	  							</p>
+	  						</div>
+	  				</div>
+	  			{% endfor %}
+		</div>
+
+		<div class="lesson-title-box">
+			<h2>Lesson 5: Lists/Mutation/Index</h2>
+				{% for concept in concepts_2_5 %}
+					<div class="concept">
+	  					<h3>{{ concept[0] }}</h3>	
+	  						<div class="content">
+	  							<p>
+	  								{{ concept[1] }}
+	  							</p>
+	  						</div>
+	  				</div>
+	  			{% endfor %}
+		</div>
+
+
+
+</div>
+{% endblock %}
+
+
+
+
+						
+

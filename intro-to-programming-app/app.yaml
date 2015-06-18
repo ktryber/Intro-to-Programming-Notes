@@ -1,0 +1,33 @@
+application: intro-to-programming-app
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /screenshots
+  static_dir: screenshots
+
+- url: /css
+  static_dir: css
+
+
+- url: .*
+  script: main.app
+
+- url: /admin/.*
+  script: admin.app
+  login: admin
+
+
+
+libraries:
+- name: jinja2
+  version: latest
+- name: webapp2
+  version: "2.5.2"
+

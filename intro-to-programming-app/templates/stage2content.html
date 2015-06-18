@@ -1,0 +1,378 @@
+						<div class="concept">
+								<h3>Programming Intro</h3>
+								<div class="content">
+									<p>
+										"The programs you'll write in this class will be Python code. Those will be input to another program which is a Python interpreter that follows the instructions in your code and it does that by following the instruction in its code... and you'll be able to run all that using your web browser."
+									</p>
+										<ul>
+											<li>Computers need programs to tell them what to do.</li>
+											<li>The computer will need a very precise sequence of steps to tell it how to behave.</li>
+											<li>Python is an interpreter that takes our code and tells the computer how to react.</li>
+											<li>We have to use exact grammar and everything must be spelled perfectly for the code to actually figure out what we want it to do. It cannot guess like a human would based on the information given.</li>
+										</ul>
+								</div>
+						</div>
+
+						<div class="concept">
+							<h3>Python Grammar</h3>
+								<div class="content">
+									<p>
+										Examples:Python grammer to arithmetic expressions<br>
+									    Expression > Expression Operator Expression<br>
+									    Expression > Number<br> 
+									    Operator > +<br>
+									    Operator > *<br>
+									    Number > 0,1...<br>
+									    Expression > (Expression)<br><br>
+
+
+										example:<br> 
+
+										Expression<br>
+										Expression Operator Expression<br>
+										Number + Number<br>
+										1 + 1<br><br>
+
+										Expression<br> 
+										Expression Operator Expression<br>
+										Expr Opr Expr + Number<br>
+										Number * Expr Opr Expr<br>
+										2 * 1+1<br>    
+									</p>
+								</div>
+						</div>
+				</div>
+
+				<div class="lesson-title-box">
+					<h2>Lesson 2: Varialbes, Strings and Find</h2>
+						<div class="concept">
+							<div class="concept_title">
+								<h3>Notes Link</h3>
+							</div>
+								<div class="content">
+									<a href="https://www.evernote.com/shard/s250/nl/32113319/f23bfc48-77a7-4a9f-8ce5-16949690d093/">Stage 2 Lesson 2:Evernote Notes</a>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Varable Assignment</h3>
+							</div>
+								<div class="content">
+										<ul>
+											<li>To introduce a variable to python you need to use an "Assignment Statement".</li>
+											<li>Variable names can only have letters, numbers and underscores and must begin with an underscore or letter.</li>
+										</ul>
+											<p>
+												example: name = expression<br>
+												speed_of_light = 299792458<br>
+												billionth = 1.0 / 1000000000<br>
+											</p>
+										<ul>
+											<li>= means assignment, think of it as an arrow.</li>
+											<li>When you use the same variable name later in Python code with a different value the old variable will still exist but it will be overwritten with the new variable value.</li>
+										</ul>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Strings</h3>
+							</div>
+								<div class="content">
+									<p>
+										A sequence of characters surrounded by single quotes or double quotes. You can 'start the string' in single quotes and "end the string" in double quotes.  If a string starts with a single quote it must end in a single quote and vice vera.<br>
+										ex:<br>
+										print 'Hello'<br>
+										print "Hello" 
+									</p>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Concatenation</h3>
+							</div>
+								<div class="content">
+									<p>
+										
+									
+										Close your strings and put a spcae and plus symbol between them.<br>
+										ex:<br>
+										'Hello' + '!' = Hello!
+									</p>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Indexing Strings</h3>
+							</div>
+								<div class="content">
+									<p>
+										 string[expression]<br>
+
+										ex:<br>
+										'udacity'[1+1] -- 'a'<br><br>
+										name = 'kris'<br>
+										print name[0] -- 'k'
+									</p>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Selecting Sub-Sequences</h3>
+							</div>
+								<div class="content">
+									<p>
+										string[expression>:expression]<br>
+										    s         number        number <br><br>
+
+										- String that is a subsequence of the characters in s starting from position start and ending with position stop<br>
+
+										ex:<br>
+										word = 'assume'<br>
+										print word[3] prints u<br>
+										print word[3:4] prints u<br>
+										print word[4:6] prints me<br>
+										print word[4:] prints me<br>
+										print word[:2] prints as<br>
+										print word[:] prints assume<br><br>
+
+										-If you want to add something to your selection like an uppercase "A" instead of a lower case a like in our variable "word" you would need to select "ssume" and concatenate it with "A". ex:<br><br>
+										ex:<br>
+										print 'A' + word[1:]
+									</p>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Finding Strings in Strings</h3>
+							</div>	
+								<div class="content">
+									<p>
+										Find is a method in Python.<br>
+										string.find(string) = number that gives first position in search string where the target string appears. If the target is not found it will output -1.<br><br>
+										
+										ex:<br>
+										<!--find an example to put here-->
+
+									</p>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Adding Parameters to Find</h3>
+							</div>
+								<div class="content">
+									<p>
+										string.find(string,number) = If there are multiple occurences of your find you can decide where to start the results of your find with a number parameter.<br><br>
+
+										ex:<br>
+										danton = “De L’audace, encore de l’audace, toujours de l’audace."<br>
+										print danton.find("audace") prints 5<br>
+										print danton.find("audace", 0) prints 5<br>
+										print danton.find("audace", 5) prints 5<br>
+										print danton.find("audace", 6) prints 25<br>
+									</p>
+								</div>
+						</div>
+				</div>
+
+				<div class="lesson-title-box">
+					<h2>Lesson 3: Prodedures(functions)</h2>
+						<div class="concept">
+							<div class="concept_title">
+								<h3>Notes Link</h3>
+							</div>
+								<div class="content">
+									<a href="https://www.evernote.com/shard/s250/nl/32113319/1b77d660-998b-4538-b5c9-297f4865dc14/">Stage 2 Lesson 3:Evernote Notes</a>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Functions and Procedures</h3>
+							</div>	
+								<div class="content">
+									<p>
+										- def = Define<br>
+										- Using Procedures:<br>
+										procedure(input, input, input)<br>
+											return output<br><br>
+
+										ex:<br>
+										
+										def sum3(c, d, e):<br>
+											return c + d + e<br><br>
+
+										print sum3(1,2,3)<br>
+										#>>> 6<br><br>
+
+										print sum3(93,53,70)<br>
+										#>>> 216	
+
+									</p>
+								</div>
+						</div>
+				</div>
+
+				<div class="lesson-title-box">
+					<h2>Lesson 4: If/Else/Or/While/Break</h2>
+						<div class="concept">
+							<div class="concept_title">
+								<h3>Notes Link</h3>
+							</div>
+								<div class="content">
+									<a href="https://www.evernote.com/shard/s250/nl/32113319/c45a09e6-84c0-472f-979e-ccefc39b6756/">Stage 2 Lesson 4:Evernote Notes</a>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Equality Comparisons</h3>
+							</div>
+								<div class="content">
+									<P>
+										Equalities in Python produce a true or false (boo lean) result. You can use less than, Greater than, less than or equal to, greater than or equal to and is not equal to (!=).<br><br>
+										Double equal is "equal to".
+									</P>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>If</h3>
+							</div>
+								<div class="content">
+									<P>
+										If allows you to write code that executes equality statements.
+									</P>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Else</h3>
+							</div>
+								<div class="content">
+									<P>
+										Else statements will run when the if statement is not true.  Is 1 greater than 2, if yes true else false.
+									</P>
+								</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>While</h3>
+							</div>
+								<div class="content">
+									<P>
+										While loops allow us to execute a test expression within a procedure over and over again until as long as it is true, when it becomes false it will stop and continue to the next piece of code.<br><br>
+										Break: Allows a while loop to stop even if it is true so you can get out of the loop and execute the following code.
+									</P>
+								</div>
+						</div>
+				</div>
+
+				<div class="lesson-title-box">
+					<h2>Lesson 5: Lists/Mutation/Index</h2>
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Notes Link</h3>
+							</div>
+							<div class="content">
+								<p>
+									<a href="https://www.evernote.com/l/APphiRXQFChEeJVHvnLyy1P0w18cfmMmFYw">Stage 2 Lesson 5: Evernot Notes</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>String vs. List</h3>
+							</div>
+							<div class="content">
+								<p>
+									A string is a sequence of characters and a list can be a sequence of anything. you can access things in a list by indexing similiar to how you would index a string.
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Mutation</h3>
+							</div>
+							<div class="content">
+								<p>
+									Allows you to change the value of the elements inside a list after it has been created.
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Aliasing</h3>
+							</div>
+							<div class="content">
+								<p>
+									Having two different ways to refer to the same object in programming. If you have two variables that refer to the same object it will change the value for both variables.
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Append</h3>
+							</div>
+							<div class="content">
+								<p>
+									A method that adds a new element to the end of a list. It mutates an existing list instead of creating a new list to add the new element.
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>len()</h3>
+							</div>
+							<div class="content">
+								<p>
+									Short for length, pass in an object that you want to know the length for.
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Index</h3>
+							</div>
+							<div class="content">
+								<p>
+									Index can be used to produce the position of an element within a list. If it's true it wil  return the postion if th's false it will produce an error. In lesson 5 we used index with an if statement thus allowing us to produce an else without error.<br><br>
+
+									if t in p:
+										return p.index(t)
+									else:
+										return -1
+								</p>
+							</div>
+						</div>
+
+						<div class="concept">
+							<div class="concept-title">
+								<h3>Add AND Assignment Operator</h3>
+							</div>
+							<div class="content">
+								<p>
+									Adds the right operand to the left operand and assigns the result to the left operaand. c += is equivalent to c = c + a
+								</p>
+							</div>
+						</div>
+				</div>
+				
+		</div>
+{% endblock %}
